@@ -1,1 +1,8 @@
-<div>hello world {{ name }}</div>
+{% extends "base.html" %}
+
+{% block body %}
+<!-- <div class="test">hello world {{ name }}</div> -->
+{% for article in article_list %}
+	{{ article.title }}
+{% endfor %}
+{% endblock %}
